@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 720px;
+    height: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.etch-div {
+    background-color: gray;
+}
+
+.generate {
+    font-size: 32px;
+    background-color: #303030;
+    border-radius: 4px;
+    width: 1284px;
+    height: 128px;
+    text-align: center;
+}
