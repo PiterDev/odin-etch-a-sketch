@@ -21,11 +21,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    border: 16px black;
+    border-radius: 8px;
 }
 
 .etch-div {
     background-color: #e1d88e;
-    transition: 0.075s;
 }
 
 .generate {
