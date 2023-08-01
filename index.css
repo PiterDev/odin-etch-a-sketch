@@ -2,6 +2,7 @@ body {
     height: 100vh;
     margin: 0px;
     padding: 0px;
+    background-color: #f8f4d2;
 }
 
 .center {
@@ -21,7 +22,7 @@ body {
 }
 
 .etch-div {
-    background-color: gray;
+    background-color: #e1d88e;
 }
 
 .generate {

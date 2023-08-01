@@ -13,7 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function divMouseOver(event) {
-    this.style.backgroundColor = "#000";
+    if (this.style.backgroundColor) {
+        if (this.style.filter) {
+            let currentValue = parseInt(this.style.filter.replace("%","").split("(")[1]);
+            this.style.filter = this.style.filter = `brightness(${currentValue-10}%)`;
+            
+        } else {
+            this.style.filter = "brightness(90%)";
+        }
+    } else {
+        this.style.backgroundColor = `rgb(${getRandomNumber(144,255)}, ${getRandomNumber(144,255)}, ${getRandomNumber(144,255)})`;
+    }   
+}
+
+function getRandomNumber(min, max) {
+    return Math.random() * (max - min) + min;
 }
 
 function createSquareDivs(gridSize) {
