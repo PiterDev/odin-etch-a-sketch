@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container {
@@ -24,10 +25,5 @@ body {
 }
 
 .generate {
-    font-size: 32px;
-    background-color: #303030;
-    border-radius: 4px;
-    width: 1284px;
-    height: 128px;
     text-align: center;
 }
